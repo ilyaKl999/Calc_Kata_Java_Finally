@@ -62,6 +62,8 @@ class Kata_Calc_LikeMentor_metod {
                                 int n = f1.x * f2.x;
                                 result = rome[n];
                                 return result;
+                            default:
+                                throw new UncheckedUserException("формат математической операции не удовлетворяет заданию - два операнда и один оператор (+, -, /, *)");
                         }
                     }
                 }
@@ -113,7 +115,7 @@ class Kata_Calc_LikeMentor_metod {
                     result = Integer.toString(n);
                     return result;
                 default:
-                    throw new UncheckedUserException("формат математической операции не удовлетворяет заданию - два операнда и один оператор (+, -, /, *)\")");
+                    throw new UncheckedUserException("формат математической операции не удовлетворяет заданию - два операнда и один оператор (+, -, /, *)");
             }
         }
 
